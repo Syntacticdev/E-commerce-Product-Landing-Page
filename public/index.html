@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo_wrapper">
+        <button class="menu_btn">
+          <img src="./images/icon-menu.svg" alt="" />
+        </button>
+        <img src="./images/logo.svg" alt="" class="logo" />
+      </div>
+
+      <div class="navbar_wrapper">
+        <ul class="navbar">
+          <button class="menu_btn">
+            <img src="/images/icon-close.svg" class="close_menu_icon" alt="" />
+          </button>
+          <li class="nav-item"><a href="">Collections</a></li>
+          <li class="nav-item"><a href="">Men</a></li>
+          <li class="nav-item"><a href="">Women</a></li>
+          <li class="nav-item"><a href="">About</a></li>
+          <li class="nav-item"><a href="">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="actions">
+        <button class="cartBtn">
+          <img src="./images/icon-cart.svg" alt="" />
+          <span class="badge"></span>
+        </button>
+        <img src="./images/image-avatar.png" class="profile_img" alt="" />
+      </div>
+
+      <div class="cart">
+        <div class="cart_head">
+          <h3 class="cart_head_label">Cart</h3>
+        </div>
+        <div class="cart_body">
+          <ul class="cartLists"></ul>
+        </div>
+        <div class="cart_foot">
+          <button class="checkout_btn">Checkout</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="display">
+          <div class="thumbnail_wrapper">
+            <img
+              src="./images/image-product-1.jpg"
+              alt="image-product-1.jpg"
+              class="thumbnail"
+            />
+          </div>
+          <div class="image_selection">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              class="product_thumbnail"
+              alt="/images/image-product-1.jpg"
+            />
+            <img
+              src="./images/image-product-2-thumbnail.jpg"
+              class="product_thumbnail"
+              alt="/images/image-product-2.jpg"
+            />
+            <img
+              src="./images/image-product-3-thumbnail.jpg"
+              class="product_thumbnail"
+              alt="/images/image-product-3.jpg"
+            />
+            <img
+              src="./images/image-product-4-thumbnail.jpg"
+              class="product_thumbnail"
+              alt="/images/image-product-4.jpg"
+            />
+          </div>
+        </div>
+
+        <div class="context">
+          <h5 class="productCompany">Sneaker Company</h5>
+          <div>
+            <h2 class="productName">Fall Limited Edition</h2>
+            <h2 class="productCategory">Sneakers</h2>
+          </div>
+          <p class="product_details">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price_section">
+            <div class="current">
+              <h3 class="current_price">$125.00</h3>
+              <span class="discount">50%</span>
+            </div>
+            <span class="prev_price">$250.00 0</span>
+          </div>
+          <div class="product_action">
+            <div class="quantity_actions">
+              <button class="dec_btn">
+                <img src="./images/icon-minus.svg" alt="" />
+              </button>
+              <span class="item-quantity">0</span>
+              <button class="inc_btn">
+                <img src="./images/icon-plus.svg" alt="" />
+              </button>
+            </div>
+            <button class="addToCartBtn">
+              <img src="./images/icon-cart.svg" class="addToCartIcon" alt="" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6/hub/ecommerce-product-page-UdWAb7H9h"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Syntacticdev</a>.
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+    <script src="./cart.js"></script>
+  </body>
+</html>
